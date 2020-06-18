@@ -1,0 +1,182 @@
+.slid
+    @media (max-width: 640px)
+        padding: 15px 15px 110px 15px
+        position: relative
+    & .container
+        position: relative
+        padding: 120px 30px 40px 30px
+        min-height: 520px
+        @media (max-width: 1024px)
+            padding: 120px 15px 40px 15px
+        @media (max-width: 768px)
+            padding: 80px 15px 60px 15px
+        @media (max-width: 640px)
+            padding: 0
+            position: static
+       
+    &__text
+        max-width: 588px
+        flex-grow: 1
+        flex-shrink: 0
+        flex-basis: auto
+    &__title
+        font-size: 36px
+        line-height: 40px
+        margin-bottom: 30px
+        @media (max-width: 768px)
+            width: 380px
+            margin-bottom: 20px
+        @media (max-width: 640px)
+            width: 100%
+            max-width: 100%
+            font-size: 24px
+            line-height: 30px
+    &__content
+        display: flex
+        @media (max-width: 640px)
+            display: block
+    &__subtext
+        font-size: 16px
+        font-weight: 500
+    &__list
+        list-style: none
+        font-size: 16px
+    &__list-item
+        position: relative
+        margin: 15px 0
+        padding-left: 30px
+        &_bold
+            font-weight: 500
+        &::before
+            content: ""
+            position: absolute
+            left: 0 
+            top: 5px
+            display: block
+            width: 12px
+            height: 12px
+            border-radius: 50%
+    &__text-part
+        position: relative
+        max-width: 540px
+        display: flex
+        flex-direction: column
+        min-height: 360px
+        justify-content: space-between
+        z-index: 1
+        @media (max-width: 1024px)
+            max-width: 50%
+        @media (max-width: 640px)
+            width: 100%
+            max-width: 100%
+            position: static
+            display: block
+            min-height: auto
+    &__img-part
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        height: 100%
+        width: 588px
+        @media (max-width: 1024px)
+            max-width: 452px
+            background-repeat: no-repeat
+            background-position: center
+        @media (max-width: 768px)
+            max-width: 370px
+            background-position: bottom
+            background-size: 110%
+        @media (max-width: 640px)
+            display: block
+            position: static
+            padding-top: 94%
+            max-width: 100%
+
+
+    &__button
+        border: 0
+        display: block
+        color: #ffffff
+        background-color: #0073F1
+        width: 200px
+        height: 50px
+        line-height: 50px
+        border-radius: 25px
+        font-size: 10px
+        letter-spacing: 1px
+        text-transform: uppercase
+        @media (max-width: 640px)
+            position: absolute
+            bottom: 60px
+            left: 0
+            right: 0
+            margin: auto
+
+        
+.background-view
+        &_default
+            background: #F7F7F7
+            @media (max-width: 768px)
+                background: #333333
+        &_1
+            background-color: #FFF8CC
+            & .slid__list-item::before
+                background: #F2C94C
+            &.slider__btn
+                @media (max-width: 768px)
+                    background: #F2C94C
+                
+        &_2
+            background-color: #FFE9E9
+            & .slid__list-item::before
+                background: #FF7777
+            & .slider__btn
+                @media (max-width: 768px)
+                    background: #FF7777
+
+
+                
+        &_3
+            background-color: #D9F4F2
+            & .slid__list-item::before
+                background: #71D0BA
+            & .slider__btn
+                @media (max-width: 768px)
+                    background: #71D0BA
+
+
+                
+        &_4
+            background-color: #E1EAF7
+            & .slid__list-item::before
+                background: #81B1D9
+            & .slider__btn
+                @media (max-width: 768px)
+                    background: #81B1D9
+
+
+                
+        &_5
+            background-color: #F3EFF7
+            & .slid__list-item::before
+                background: #A57FD3
+            & .slider__btn
+                @media (max-width: 768px)
+                    background: #A57FD3
+
+
+                
+        &_6
+            background-color: #EEF8E4
+            & .slid__list-item::before
+                background: #71D0BA
+            & .slid__btn
+                @media (max-width: 768px)
+                    background: #71D0BA
+
+
+                
+        
+
+

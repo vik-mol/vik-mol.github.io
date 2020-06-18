@@ -1,0 +1,38 @@
+.header
+    position: absolute
+    width: 100%
+    z-index: 99
+    display: block
+    @media (max-width: 640px)
+        position: relative
+        background-color: #2B2B51
+        color: #ffffff
+    &__link
+        color: #2B2B51
+        font-size: 14px
+        text-decoration: none
+        @media (max-width: 640px)
+            color: #ffffff
+    &__flex
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 54px
+    &__logo-box
+        display: flex
+        align-items: center
+        @media (max-width: 640px)
+            width: 100%
+            justify-content: space-between
+    &__logo
+        display: inline-block
+        margin-right: 40px
+    &__btn
+        display: inline-block
+    &__phone
+        font-size: 24px
+        line-height: 30px
+        text-decoration: none
+        color: #2B2B51
+        @media (max-width: 640px)
+            display: none
